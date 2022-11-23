@@ -1,0 +1,29 @@
+{
+  "name": "@dotchat/iframe",
+  "version": "0.0.1",
+  "description": "Dotchat iframe sdk",
+  "license": "MIT",
+  "main": "./dist/main.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "webpack --mode=production --define-process-env-node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --define-process-env-node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "dependencies": {
+    "@dotchat/bus": "^0.0.2"
+  }
+}
